@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('nature9.jpg');
+        }
+    
+        .d5{
+            width:40%;
+            height:500px;
+            backdrop-filter: blur(5px);
+            text-align: center;
+            margin: auto;
+            padding: 15px;
+            border-radius: 10px;
+        }#f6{
+            height: 30px;
+            width: 70%;
+            outline: none;
+            border: 2px solid gray;
+            padding: 5px;
+            font-size: 20px;
+            background: transparent;
+            border-radius: 5px;
+
+        }
+        input::placeholder,textarea::placeholder{
+            color:white;
+            
+        }
+        #area{
+            width: 70%;
+            height: 100px;
+            outline: none;
+            padding: 10px;
+            font-size: 20px;
+            background: transparent;
+            border-radius: 5px;
+        }
+        .btn{
+            background-color: orange;
+            border: none;
+            font-size: 20px;
+            margin-top: 30px;
+            font-weight: bold;
+            transition: 1s all;
+            height: 50px;
+            width: 200px;
+            border-radius:10px ;
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <div class="d5" > 
+     <h1 id="">CONTACT US</h1><BR><BR>
+       <input type="text"  id="f6" placeholder="Name"><br><br>
+       <input type="Email" id="f6" placeholder="Email"><br><br>
+       <input type="Number" id="f6" placeholder="phone nomber"><br><br>
+      <textarea placeholder="Enter your message" id="area"></textarea>
+      <br>
+      <button  class="btn" type="submit">submit</button>
+      </div>
+    </form>
+
+</body>
+</html>
