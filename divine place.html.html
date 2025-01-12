@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+         h2{
+            text-align: center;
+            font-size: 80px;
+            margin-left: 10%;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFdF5ZGd-DeMBE8euI43BKCo2OmunMSnV-A&s);
+            background-size: contain;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         }
+            
+            
+            
+        
+            
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Container */
+        .Vcontainer {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Card Styles */
+        .Vcard {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            border: 1px solid silver;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #fff;
+            height: 350px;
+        }
+
+        .Vcard img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .Vcard .Vleft {
+            width: 30%;
+            padding: 10px;
+        }
+
+        .Vcard .Vright {
+            width: 70%;
+            padding: 20px;
+            text-align: justify;
+            overflow: auto;
+        }
+
+        .Vcard #heading {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .Vcard span {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .Vcard {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .Vcard .Vleft,
+            .Vcard .Vright {
+                width: 100%;
+            }
+
+            .Vcard img {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .Vcard .Vright {
+                padding: 10px;
+            }
+
+            .Vcard #heading {
+                font-size: 1.2em;
+            }
+
+            .Vcard span {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>India's Divine Place</h2>
+
+    <div class="Vcontainer">
+
+        
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://as2.ftcdn.net/v2/jpg/03/23/60/51/1000_F_323605141_QR9juhNnUGvBvoOhsXSo1xi7xK9aJMAZ.jpg"" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Vaishno Devi Temple, Jammu</h1>
+                <span>Mata Vaishno Devi Temple situated in the Trikuta Hills in Katra, Jammu & Kashmir, is one of the most visited Hindu pilgrimage sites in India. Devotees from all over the world come to visit this temple and take the blessings of Mata Vaishno Devi. It is also considered as one of the most important Shaktipeeths, as it is believed that the skull of Goddess Sati fell here.
+
+                    A pilgrimage to Shri Mata Vaishno Devi Ji is considered as one of the holiest pilgrimages for Hindus. This temple is popular worldwide as it is believed that “Moonh Maangi Muradein Poori Karne Wali Mata”, the deity here, fulfils whatever her believers wish for. This holy cave is located at an altitude of 5,200 feet and the pilgrims have to undertake a trek of almost 12 km starting from Katra.
+                    
+            
+            </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://static.wanderon.in/wp-content/uploads/2024/09/best-time-to-visit-amarnath-temple.png" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Amarnath Temple, Pahalgam</h1>
+                <span>Amarnath Temple is a Hindu shrine located in the Pahalgam tehsil of the Anantnag district of Jammu and Kashmir, India. It is a cave situated at an altitude of 3,888 m (12,756 ft),[1] about 168 km from Anantnag city, the district headquarters, 141 km (88 mi) from Srinagar, the summer capital of Jammu and Kashmir, reached through either Sonamarg or Pahalgam. It is an important shrine in Hinduism.[2][3]The cave, located in Sind Valley, is surrounded by glaciers, snowy mountains and is covered with snow most of the year, except for a short period in the summer, when it is open to pilgrims. In 1989, pilgrims numbered between 12,000 and 30,000. In 2011, the numbers reached a peak, crossing 6.3 lakh (630,000) pilgrims.
+                </span>
+            </div>
+        </div>
+      <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://www.tourmyindia.com/socialimg/jama-masjid-kashmir.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Jamia Masjid</h1>
+                <span>Jamia Masjid is one of the sacred and the biggest mosques in Srinagar. The Indo-Saracenic style of architecture and majestic courtyard with 370 wooden pillars make this place highly attractive. The mosque is thronged by Muslims every Friday and also, it is one of the most visited places by tourists. Jama Masjid has a big area which can accommodate about one lakh people at a time. The peaceful atmosphere of Jama Masjid makes it more popular among muslims people.
+                    According to historian Mohammad Ishaq Khan, “Jamia Masjid has primarily played a significant part in imparting religious education. However, with the spread of modern education among Kashmiri Muslims, thanks to the efforts of Mirwaiz Ghulam Rasul Shah, the Masjid began to play a seminal role in the growth of political consciousness.
+                </span>
+            </div>
+        </div> 
+         <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://media.istockphoto.com/id/843315116/photo/raghunath-temple-jammu.jpg?s=1024x1024&w=is&k=20&c=UQoWvR6ECZs8svnh9CRr_O7UpTsQUBHGYCMxg0Spz_I=" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Raghunath Temple</h1>
+                <span>Raghunath Temple is basically located in the Indian state of Jammu and Kashmir, which is worldwide famous. Dedicated to Lord Rama, this temple was constructed by Maharaja Gulab Singh and later on completed by Maharaja Ranbir Singh. The interior of this temple is well-crafted by gold plated spires, art, and paintings related to the God Rama and Krishna. The entrance door has Surya icon and it consists of a library also. This temple consists of seven Hindu shrines along with seven marvelous shikharas.
+                    Raghunath Temple, with seven shrines each with its own `Shikhara`, (shikhara, a Sanskrit word translating literally to `mountain peak`, refers to the rising tower in the Hindu temple architecture in north India) is one of the largest temple complexes of north India, located in Jammu city. 
+                </span>
+            </div>
+        </div> 
+          <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://plus.unsplash.com/premium_photo-1697730331435-92e07494db43?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Golden Temple</h1>
+                <span>The Golden Temple (also known as the Harmandir Sāhib (lit. 'House of God', Punjabi pronunciation: [ɦəɾᵊmən̪d̪əɾᵊ saːɦ(ɪ)bᵊ]), or the Darbār Sāhib, (lit. ''exalted court'', [d̪əɾᵊbaːɾᵊ saːɦ(ɪ)bᵊ] or Suvaran Mandir[2]) is a gurdwara located in the city of Amritsar, Punjab, India.[3][4] It is the pre-eminent spiritual site of Sikhism. It is one of the holiest sites in Sikhism, alongside the Gurdwara Darbar Sahib Kartarpur in Kartarpur, and Gurdwara Janam Asthan in Nankana Sahib.[3][5]The man-made pool (sarovar) on the site of the temple (gurdwara) was completed by the fourth Sikh Guru, Guru Ram Das, in 1577.[6][7] In 1604, Guru Arjan, the fifth Sikh Guru, placed a copy of the Adi Granth in the Golden Temple and was a prominent figure in its development.[3][8] The gurdwara was repeatedly rebuilt by the Sikhs after it became a target of persecution and was destroyed several times by the Mughal and invading Afghan armies.[3]
+
+                    </span>
+            </div>
+        </div>
+          <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/St._Mary%27s_Cathedral%2C_Jalandhar.jpg" alt="">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">St. Mary's Cathedral Church, Jalandhar
+                </h1>
+                <span>St. Mary's Cathedral in Jalandhar, Punjab, India, is the seat of the bishop of the Roman Catholic Diocese of Jalandhar. The cathedral is located in the Jalandhar Cantonment. The old church at the same site was dedicated to St. Patrick and was constructed by Rev. Fr. John Mc Donnel, OFMCap of the Vicariate Apostolic of Agra in 1847.
+
+                    Initially, the area was under the Diocese of Lahore. In 1952, after the partition, the Catholic Mission of the Indian state of Punjab was raised to the status of apostolic prefecture with its headquarters was located at Jalandhar and was handed over from the Belgian province of the Capuchin missionaries to the British province. The church at Jalandhar cantonment became the mother church of Punjab. With the erection of the new Diocese of Jalandhar in 1971, this church gained the status of cathedral of the diocese.
+                    
+                    </span>
+            </div>
+        </div>
+          <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://as2.ftcdn.net/v2/jpg/05/11/28/63/1000_F_511286357_xVLTaJgd44M47vkNGog9CwMEzQaMPRrj.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Badrinath</h1>
+                <span>Badarinath or Badarinarayana Temple is a Hindu temple dedicated to Vishnu. It is situated in the town of Badrinath in Uttarakhand, India. The temple is also one of the 108 Divya Desams dedicated to Vishnu for Vaishnavas, who is worshipped as Badrinath. It is open for six months every year (between the end of April and the beginning of November), because of extreme weather conditions in the Himalayan region. The temple is located in Garhwal hill tracks in Chamoli district along the banks of Alaknanda River. It is one of the most visited pilgrimage centers of India, having recorded 2.8 million (28 lakh) visits in just 2 months in 2022.[1] It is one of the Char Dham pilgrimage sites.
+
+                </span>
+            </div>
+        </div> 
+         <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://images.pexels.com/photos/15031440/pexels-photo-15031440.jpeg?cs=srgb&dl=pexels-alok-kumar-273007-15031440.jpg&fm=jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Kedarnath</h1>
+                <span>Kedarnath is a pilgrimage site or tirtha dedicated to the Hindu deity Shiva. It is one of the four pilgrimage spots that form a part of the Uttarkhand Char Dham yatra or Chota Char Dham yatra.[6] The temple's construction is credited to the Pandava brothers mentioned in the Mahabharata.[7][8] However, the Mahabharata does not mention any place called Kedarnath. One of the earliest references to Kedarnath occurs in the Skanda Purana (c. 7th-8th century), which names Kedara (Kedarnath) as the place where Shiva released the holy waters of Ganga from his matted hair, resulting in the formation of the Ganges River.[9]
+                    Kedarnath was a prominent pilgrimage centre by the 12th century when it is mentioned in Kritya-kalpataru written by the Gahadavala minister Bhatta Lakshmidhara.[11]
+
+
+
+        
+                </span>
+            </div>
+        </div>
+          <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgTZZcyijK0BiVugB2Bm2BVDVeJRt9E-WZGw&s" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Gangotri</h1>
+                <span>Gangotri is a small town centered around the temple of Gangotri temple and is one of the holy places among the four Char Dhams. It is the highest and the most important temple of river Ganga which is worshiped as a Goddess in India.
+
+                    The origin of the holy river is at Gaumukh, set in the Gangotri glacier that can be accessed by a short 19 km trek from Gangotri. But according to Hindu mythology, Gangotri is the place where river Ganga descended from heaven when Lord Shiva released the mighty river from his luscious locks.
+                    Gangotri is a town and a Nagar Panchayat (municipality) in Uttarkashi district in the state of Uttarakhand, India. It is 99 km from Uttarkashi, the main district headquarter. It is a Hindu pilgrim town on the banks of the river Bhagirathi – the origin of the river Ganges. The town is located on the Greater Himalayan Range, at a height of 3,100 metres (10,200 ft). According to a popular Hindu legend, the goddess Ganga descended here when Shiva released the mighty river from the locks of his hair.</span>
+
+
+            </div>
+        </div>
+
+          <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgfrCYUCFJk5lrXFaL14CnQmlp_-Q6Wp2G_g&s" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Yamunotri
+                </h1>
+                <span>Yamunotri, also Jamnotri, is the source of the Yamuna River and the seat of the Goddess Yamuna in Hinduism.[1] It is situated at an altitude of 3,293 metres (10,804 ft) in the Garhwal Himalayas and located approximately 150 kilometres (93 mi) North of Uttarkashi, the headquarters of the Uttarkashi district in the Garhwal Division of Uttarakhand, India. It is one of the four sites in India's Chota Char Dham pilgrimage. The sacred shrine of Yamunotri, source of the river Yamuna, is the westernmost shrine in the Garhwal Himalayas, perched atop a flank of the Bandarpunch mountain. The chief attraction at Yamunotri is the temple devoted to the Goddess Yamuna and the holy thermal springs at Janki Chatti which is 7 km away.
+                    The actual source, a frozen lake of ice and glacier (Champasar Glacier) located on the Kalind Mountain at a height of 4,421 m above sea level, about 1 km further up, is not frequented generally as it is not accessible; hence the shrine has been located on the foot of the hill. The approach is extremely difficult and pilgrims therefore offer puja at the temple itself.
+
+
+
+                </span>
+            </div>
+        </div>
+          <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNEvufgNUOFNXffvK-HoED904IDn9g0e9sWg&s" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Prem Mandir Vrindavan </h1>
+                <span>Prem Mandir (lit. The Temple of Divine Love) is a Hindu temple in Vrindavan, Mathura district, Western Uttar Pradesh, India. The temple was established by Jagadguru Shri Kripalu Ji Maharaj (the fifth Original Jagadguru).[1] It is maintained by Jagadguru Kripalu Parishat, an international non-profit, educational, spiritual, charitable trust. The complex is on a 22-hectare (55-acre) site on the outskirts of Vrindavan. It is dedicated to Radha Krishna and Sita Ram. Radha Krishna are on the first level and Sita Ram are on the second level. Different Leelas of Shri Krishna and Rasik saints are depicted all over the wall of the main temple.[2]Construction began in January 2001[3] and the inauguration ceremony took place from 15 to 17 February 2012.[4] The temple was opened to the public on 17 February. 
+
+                </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://apnayatra.com/wp-content/uploads/2023/10/Kashi-Vishwanath-Temple-Varanasi1.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Kashi Vishwanath</h1>
+                <span>Kashi Vishwanath Temple is a Hindu temple dedicated to Shiva. It is located in Vishwanath Gali, in Varanasi, Uttar Pradesh, India. The temple is a Hindu pilgrimage site and is one of the twelve Jyotirlinga shrines. The presiding deity is known by the names Vishwanath and Vishweshwara (IAST: Viśvanātha and Viśveśvara), meaning Lord of the Universe.
+
+                    The original temple, called the Adi Vishveshwar Temple, was demolished by Mohammad of Ghor during his invasion of India. Subsequently, the template was rebuilt by Man Singh I and Todar Mal under Emperor Akbar. According to several historical accounts, the Mughal Emperor Aurangzeb ordered the demolition of the Hindu temple in 1669.[1]
+                    In 2021, a major redevelopment of the temple complex was completed, and the Kashi Vishwanath Dham Corridor connecting the Ganga river with the temple was inaugurated by Prime Minister Modi, leading to a many-fold increase in visitors.[4][5] It has become one of the most visited Hindu temples in India, with an average 45,000 pilgrims per day in 2023.</span>
+
+
+            </div>
+        </div>
+
+ <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Ram Mandir, Ayodhaya</h1>
+                <span>The Ram Mandir (ISO: Rāma Maṁdira, lit. 'Rama Temple') is a partially constructed Hindu temple complex in Ayodhya, Uttar Pradesh, India.[6][7] Many Hindus believe that it is located at the site of Ram Janmabhoomi, the mythical birthplace of Rama,[c] a principal deity of Hinduism.[8][9][10] The temple was inaugurated[7] on 22 January 2024 after a prana pratishtha (consecration) ceremony.[6][10] On the first day of its opening, following the consecration, the temple received a rush of over half a million visitors,[11] and after a month, the number of daily visitors was reported to be between 100,000 and 150,000.[12]
+                    Ayodhya, located on the banks of the Sarayu River in Uttar Pradesh, holds immense importance in Hindu mythology as the birthplace of Lord Rama. The city is home to the revered Ram Janmabhoomi Temple, believed to stand at the site of Rama’s birth. Pilgrims from across the country visit Ayodhya to pay homage to Lord rama.
+
+                </span>
+            </div>
+        </div>
+<div class="Vcard">
+            <div class="Vleft">
+                <img src="https://i.pinimg.com/originals/71/5e/b4/715eb40ad2b34b0674987cf538c82672.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Khatushyam JI, Sikar 
+                </h1>
+                <span>Khatu Shyam Temple is a Hindu temple in Khatoo village, just 43 km from Sikar City in the Sikar district of the Indian State of Rajasthan. It is a pilgrimage site for worshipping the deity Krishna and Barbarika who is often venerated as a shyam baba . Devotees believe the temple houses the head of Barbarika or Khatu-shyam, a legendary warrior who sacrifices his head upon the request of Krishna during the antebellum of the Kurukshetra War.
+                    Barbarika (Barbarīka) in Hinduism is the son of Ghatotkacha (son of Bhima) and Princess Maurvi, daughter of Daitya Moora,[1] though other references state that he was a warrior from the south. He is a folk character and is not attested in the Mahabharata.
+                    In Nepal, Kirati king Yalambar is believed to be the Barbarik of Mahabharata, son of Ghatotkach and grandson of Bheem. Legend credits him with meeting Indra, the lord of heaven, who ventured into the Valley in human guise, while natives of the Kathmandu Valley portray him as Akash Bhairav.[2]
+
+
+
+
+
+                </span>
+            </div>
+        </div>
+         <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://c8.alamy.com/comp/DAY09J/facade-of-a-temple-brahma-temple-pushkar-ajmer-rajasthan-india-DAY09J.jpg"alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Brahma Temple, Pushkar 
+                </h1>
+                <span>Brahma Temple, Pushkar (also known as Jagatpita Brahma Mandir) is a Hindu temple situated at Pushkar in the Indian state of Rajasthan, close to the sacred Pushkar Lake to which its legend has an indelible link.
+
+                    The temple is one of very few existing temples dedicated to the Hindu creator-god Brahma in India and remains the most prominent among them.The temple structure dates to the 14th century CE, with later partial rebuilding. The temple is made of marble and stone slabs. It has a distinct red pinnacle (shikhara) and a hamsa bird motif. The temple sanctum sanctorum holds the image of four-headed Brahma and his consort Gayatri (goddess of vedas). The temple is governed by the Sanyasi (ascetic) sect priesthood.[2] On Kartik Poornima, a festival dedicated to Brahma is held when large numbers of pilgrims visit the temple, after bathing in the sacred lake.
+                    
+                    </span>
+            </div>
+        </div>
+         <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://i.pinimg.com/736x/5f/d6/e9/5fd6e9bc7e12d4084afb32c47688eadc.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Sanwariya seth Mandir
+                </h1>
+                <span>Sanwaliaji Temple is a Hindu temple dedicated to Krishna on the Chittorgarh–Udaipur Highway, Rajasthan, India.
+
+                    Located 40  from Chittorgarh – the historic city of valor and devotion – Mandaphiya is now known as Shri Sanwaliya Dham (The residence of Krishna) and is second only to Shrinathji Temple to the followers of the Vaishnav sect. People believe that all their desires are fulfilled by their visit to Shri Sanwaliya Seth's Darbar (Court of Shri Sanwaliya Ji).[1]In Mewar, that in the year 1840, a cowherd named Bholaram dreamed of burying three divine idols underground at Chhapar in Bagund village; upon excavating the site, three beautiful idols of Krishna were discovered, as depicted in the dream. One of the statues was taken to Mandaphiya, one to Bhadsoda and the third remained at Chapar, at the very place where it was found.[1] All three locations became temples. These three temples are located close to each other, within the 5 km distance. The three temples of Sanwaliya Ji became renowned and devotees visit them in large numbers since then. Among these three temples, Mandaphia Temple.
+                    
+                    .</span>
+            </div>
+        </div>
+         <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://mpbreakingnews.in/wp-content/uploads/2022/12/mpbreaking10591033.jpeg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Shri Mahakaleshwar Jyotirlinga Temple Ujjain
+                </h1>
+                <span>Mahakaleshwar Jyotirlinga (IPA: [mahākāleśvara]) is a Hindu temple dedicated to Shiva and is one of the twelve Jyotirlingas, shrines which are said to be the most sacred abodes of Shiva. It is located in the ancient city of Ujjain in the state of Madhya Pradesh, India. The temple is situated on the side of the holy river Shipra. The presiding deity, Shiva in the lingam form is believed to be Swayambhu, deriving currents of power (Shakti) from within itself as against the other images and lingams that are ritually established and invested with mantra-shakti.
+
+                    Madhya Pradesh has two Jyotirlingas, the second one, Omkareshwar Jyotirlinga, is situated about 140 km south of Mahakaleshwar Jyotirlinga.As per the Shiva Purana, Brahma and Vishnu once had an argument over who was supreme in the creation.[1] To test them, Shiva pierced the three worlds as an endless pillar of light, the jyotirlinga.
+                    
+                    </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://images.pexels.com/photos/20295918/pexels-photo-20295918/free-photo-of-omkareshwar-jyotirlinga-in-mandhata.jpeg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Omkareshwar
+                </h1>
+                <span>Omkareshwar Temple (IAST: Ōṃkārēśvar) is a Hindu temple dedicated to Shiva, located in Mandhata, nearby Khandwa city in Khandwa district of the Indian state of Madhya Pradesh. It is one of the 12 revered Jyotirlinga shrines of Shiva.[1] It is on an island called Mandhata, near Khandwa city in the Narmada River at Khandwa district in Madhya Pradesh, India; the shape of the island is said to be like the Devanagari ॐ symbol.
+
+                    There are two main temples of Shiva here, one to Omkareshwar (whose name means "Lord of Omkara or the Lord of the Om sound") located in the island and one to Mamleshwar (Amaleshwar) (whose name means "Immortal Lord" or "lord of the Immortals or Devas") located on the southern bank of the Narmada River on the maintained Madhya Pradesh has two Jyotirlingas, the second one, Mahakaleshwar Jyotirlinga, is situated about 140 km north of Omkareshwar Jyotirlinga. </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://pbs.twimg.com/media/GJerZkTXkAAxMlT.jpg:large" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Pashupatinath Mandir</h1>
+                <span>Pashupatinath Temple at Mandsaur, also referred to as the Mandsaur Shiva temple, is a Hindu temple dedicated to Lord Shiva in Mandsaur, Madhya Pradesh, India. It belongs to Pashupatinath tradition which is one of 6 major tradition within Shaivism. It is located on Shivna River, and is known for its eight-faced Shiva Linga. The temple sculpture is dated to the 5th or 6th century based on inscriptions, with some referring to the site as Dashapura. It is near the Rajasthan border in the historic region of Malwa, about 200 kilometres (120 mi) from Indore, about 340 kilometres (210 mi) west of Udaigiri Caves and about 220 kilometres (140 mi) east of Shamalaji ancient sites, both a significant source of Gupta Empire era archaeological discoveries.[1][2] The site has been important to dating and the architectural studies of some distant sites such as the Elephanta Caves.[2]
+
+                </span>
+            </div>
+        </div>
+ <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://i.pinimg.com/originals/25/8c/81/258c816faccec58e93f535df36b55e40.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Ajmer Sharif Dargah
+                </h1>
+                <span>Ajmer Sharif Dargah is 2 kilometres (1.2 mi) away from the main central Ajmer Railway station and 500 metres away from the Central Jail and is situated at the foot of the Taragarh hill.
+                    Moinuddin Chishti was a 13th-century Sufi saint and philosopher. Born in Sanjar (of modern-day Iran), or in Sijistan,[2] he arrived in Delhi during the reign of the Sultan Iltutmish (d. 1236). Moinuddin moved from Delhi to Ajmer shortly thereafter, at which point he became increasingly influenced by the writings of the famous Sunni Hanbali scholar and mystic ʿAbdallāh Anṣārī (d. 1088), whose famous work on the lives of the early Islamic saints, the Ṭabāqāt al-ṣūfiyya, may have played a role in shaping Moinuddin's worldview. It was during his time in Ajmer that Moinuiddin acquired the reputation of being a charismatic and compassionate spiritual preacher and teacher; and biographical accounts of his life written after his death report that he received the gifts of many "spiritual marvels (karāmāt), such as miraculous travel, clairvoyance, and visions of angels" in these years of his life.
+
+
+
+                </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScWaG9B4zOn80vl5lm5adsgvaXJAt-s6bKwA&s" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Hemkund Sahib
+
+                </h1>
+                <span>Gurdwara Hemkund Sahib is a Sikh place of worship (gurdwara) and pilgrimage site in Chamoli district, Uttarakhand, India. It is devoted to Guru Gobind Singh (1666–1708), the tenth Sikh Guru, and finds mention in Dasam Granth. With its setting of a glacial lake surrounded by seven mountain peaks, each adorned by a Nishan Sahib on its cliff, it is according to the Survey of India located in the Garhwal Himalaya at an elevation of 4,572 metres (15,000 feet).[3][4] It is approached from Govindghat on the Rishikesh-Badrinath highway. The main town near Gobindghat is Joshimath. The elevation of the lake at Hemkund is approximately 15,000 feet.
+                    Hemkund is inaccessible from October through April because of snowbound paths and glaciers. Sikh pilgrims arrive in May and set to work to repair the damage to the path over the winter, which tradition is called kar seva ("selfless service"), a concept which forms an important tenet of the Sikh faith.
+
+
+                </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://media.gettyimages.com/id/521748704/photo/swaminarayan-temple-akshardham-new-delhi-india.jpg?s=612x612&w=gi&k=20&c=V_ZjYtv24aexzwfxDAylXeUMA_uO9VaeRXOFXfJ404w=" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Swaminarayan Akshardham Temple, Ahmedabad
+                </h1>
+                <span>Swaminarayan Akshardham is a Hindu temple and spiritual-cultural campus in Delhi, India. The temple is close to the border with Noida. Also referred to as Akshardham Temple or Akshardham Delhi, the complex displays millennia of traditional and modern Hindu culture, spirituality, and architecture. Inspired by Yogiji Maharaj and created by Pramukh Swami Maharaj, it was constructed by BAPS.[2] It is the world's second-largest BAPS Hindu temple, following Akshardham, New Jersey, in the United States.
+                    The temple was officially opened on 6 November 2005 by Pramukh Swami Maharaj in the presence of A. P. J. Abdul Kalam, Manmohan Singh, L.K Advani and B.L Joshi.[3][4] The temple, at the centre of the complex, was built according to the Vastu shastra and Pancharatra shastra.
+
+
+
+                </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://i.pinimg.com/originals/14/09/55/140955d8c79f73428855947d108c1fd4.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Dwarkadhish Temple
+
+                </h1>
+                <span>The Dwarkadhish temple, also known as the Jagat Mandir and occasionally spelled Dwarakadheesh, is a Hindu temple dedicated to Krishna, who is worshiped here by the name Dwarkadhish (Dvārakādhīśa), or 'King of Dwarka'. The temple is located at Dwarka city of Gujarat, India, which is one of the destinations of Char Dham, a Hindu pilgrimage circuit. The main shrine of the five-storied building, supported by 72 pillars, is known as Jagat Mandir or Nija Mandir. Archaeological findings suggest the original temple was built in 200 BCE at the earliest.[1][2][3] The temple was rebuilt and enlarged in the 15th–16th century.[4][5]
+                    The temple became part of the Char Dham pilgrimage considered sacred by Hindus in India. Adi Shankara, the 8th century Hindu theologian and philosopher, visited the shrine. The other three being comprising Rameswaram, Badrinath and Puri. Even today a memorial within the temple is dedicated to his visit.The temple became part of the Char Dham pilgrimage considered sacred by Hindus in India. Adi Shankara, the 8th century Hindu theologian and philosopher, visited the shrine.
+
+
+
+                </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://t3.ftcdn.net/jpg/04/74/52/86/240_F_474528672_vpQtkeor5wF3bF8wkm7Fbt3BOhlEoBRh.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Rishikesh
+                </h1>
+                <span>Rishikesh, also spelt as Hrishikesh, is a city near Dehradun in the Indian state Uttarakhand. The northern part of Rishikesh is in the Dehradun district while the southern part is in the Tehri Garhwal district. It is situated on the right bank of the Ganges River and is a pilgrimage town for Hindus, with ancient sages and saints meditating there in search of higher knowledge.[1][2] There are numerous temples and ashrams built along the banks of the river.[3]
+
+                    It is known as the "Gateway to the Garhwal Himalayas" and "Yoga Capital of the World".[1][4][5][6] The city has hosted the annual International Yoga Festival on the first week of March since 1999.[7][8] Rishikesh is a vegetarian-only and alcohol-free city.[9]
+                    
+                    </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://www.bhaktiwallpapers.com/uploads/2024/03/sri-balaji-bhagwan-tamil-balaji-devam-shree-tirupati-tirumala-hd-phone-wallpaper-z5jm-1709364089.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Tirupati Balaji Temple
+                </h1>
+                <span>The Sri Venkateswara Swamy Temple, is a Hindu temple situated in the hills of Tirumala at Tirupati Urban Mandal in the Tirupati district of Andhra Pradesh, India. The temple is dedicated to Venkateswara, a form of Vishnu, who is believed to have appeared on the earth to save mankind from trials and troubles of Kali Yuga. Hence the place is also known by the name Kaliyuga Vaikuntha and the deity here is referred to as Kaliyuga Prathyaksha Daivam. The temple is also known by other names like Tirumala Temple, Tirupati Temple and Tirupati Balaji Temple. Venkateswara is also known by other names including Balaji, Govinda, and Srinivasa.[4] The temple is run by Tirumala Tirupati Devasthanams (TTD), which is under control of Andhra Pradesh Government. The head of TTD is appointed by Andhra Pradesh Government.
+
+                    Tirumala hills are part of Seshachalam Hills range. The hills are 853 metres (2,799 ft) above sea level and comprise seven peaks, representing the seven heads of Adisesha. </span>
+                    
+
+
+</span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://odishaaah.com/wp-content/uploads/2024/07/ratha-yatra-ai-images-hd-d.jpg" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading"> Jagannath Temple
+
+                </h1>
+                <span>The Jagannath Temple is one of the most ancient and famous tourist attractions in Puri, Orrisa. Lord Vishnu is worshipped in the temple, and Ananta Varman Chodaganga Deva of the Ganga dynasty built the Jagannath temple. As one of the most significant and ancient temples in Orissa, the Jagannath Temple holds several historical and mysterious mythologies.
+
+                    Every day, priests of the Jagannath temple climb the temple dome, which is as high as a 45-storied building, to change the flag or Pataka. It is placed at the top of the temple’s dome and always flows in the opposite direction of the wind. As per mythology and cultural beliefs, if this ritual is missed for a day, the temple’s doors will be shut for 18 years. The priests have not missed even one day to change the temple’s flag to date.
+                    
+                    </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://images.unsplash.com/photo-1677211352662-30e7775c7ce8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGtvbmFyayUyMHN1biUyMHRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Placeholder Image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Sun Temple
+
+                </h1>
+                 <span>Konark Sun Temple is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres (22 mi) northeast from Puri city on the coastline in Puri district, Odisha, India.[1][2] The temple is attributed to king Narasingha Deva I of the Eastern Ganga dynasty about 1250 CE.[3][4]
+
+                    Dedicated to the Hindu Sun-god Surya, what remains of the temple complex has the appearance of a 100-foot (30 m) high chariot with immense wheels and horses, all carved from stone. Once over 200 feet (61 m) high,[1][5] much of the temple is now in ruins, in particular the large shikara tower over the sanctuary; at one time this rose much higher than the mandapa that remains. The structures and elements that have survived are famed for their intricate artwork, iconography, and themes, including erotic kama and mithuna scenes.
+                    
+                    
+                    
+                    </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Shree_Siddhivinayak_Temple_Mumbai.jpg/1200px-Shree_Siddhivinayak_Temple_Mumbai.jpg" alt="Placeholder image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Shri Siddhivinayak Ganapati Mandir </h1>
+                <span>The Shri Siddhivinayak Ganapati Mandir is a Hindu temple dedicated to Ganesha. It is located in Prabhadevi neighbourhood of Mumbai, Maharashtra, India.[1] It was originally built by Laxman Vithu and Deubai Patil on 19 November 1801. It is one of the most popular Hindu temples in Mumbai.[2]
+
+                    The temple has a small mandap with the shrine for Siddhi Vinayak ("Ganesha who grants your wish"). The wooden doors to the sanctum are carved with images of the Ashtavinayak (the eight manifestations of Ganesha in Maharashtra). The inner roof of the sanctum is plated with gold, and the central statue is of Ganesha. In the periphery, there is a Hanuman temple as well. The exterior of the temple consists of a dome which is lit up with multiple colors in the evenings and they keep changing every few hours. The statue of Shri Ganesha is located exactly under the dome. The pillars are carved out with the images of ashtvinayak.
+                    
+                    
+                    </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7KV7TL099Rs5XAckyLfkjbbtQTE7UKn2GQ&s" alt="Placeholder image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Shirdi Sai Baba,</h1>
+                <span>Sai Baba of Shirdi (c. 1838–15 October 1918),[2] also known as Shirdi Sai Baba, was an Indian spiritual master considered to be a saint,[3] and revered by both Hindu and Muslim devotees during and after his lifetime.
+
+                    According to accounts from his life, Sai Baba preached the importance of "realisation of the self" and criticised "love towards perishable things". His teachings concentrated on a moral code of love, forgiveness, helping others, charity, contentment, inner peace, and devotion to God and Guru.
+                    
+                    Sai Baba condemned discrimination based on religion or caste. He had both Hindu and Muslim followers, but when pressed on his own religious affiliations, he refused to identify himself with one to the exclusion of the other.[4]: 3  His teachings combined elements of Hinduism and Islam: he gave the Hindu name Dwarakamayi to the mosque in which he lived,[5] practised both Hindu and Muslim rituals, and taught using words and figures that drew from both traditions.</span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://i.pinimg.com/originals/9b/c4/1c/9bc41cf66e80db96f5711ff111545d6f.jpg" alt="Placeholder image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">
+                    Mallikarjun Temple  </h1>
+                <span>Sri Bhramarambika sametha Mallikarjuna swamy Devasthanam (romanised: Mallikārjunuḍu) or Srisailam Temple is a Hindu temple dedicated to the deities Shiva and Parvati, located at Srisailam in the Indian state of Andhra Pradesh. It is significant to the Hindu sects of both Shaivism and Shaktism as this temple is referred to as one of the twelve Jyotirlingas of Shiva and as one of the eighteen Shakti pithas, centres of the Hindu goddess.[1] Shiva is worshiped as Mallikarjuna and is represented by the lingam. His consort Parvati is depicted as Bhramaramba.When Shiva and Parvati decided to find suitable brides for their sons. Shiva got Buddhi (intellect) and Siddhi (spiritual power) married to Ganesha. Kartikeya on his return was enraged and went away to stay alone on Mount Krauncha in Palani in the name of Kumara brahmachari. On seeing his father coming over</span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIgeX9-cndlVVb10G2vllxMmzkHlb2Hq61uA&s" alt="Placeholder image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Rameswaram </h1>
+                <span>The Ramanathaswamy Temple (Rāmanātasvāmi Kōyil) is a Hindu temple dedicated to the Hindu god Shiva located on Rameswaram island in the state of Tamil Nadu, India. It is one of the twelve Jyotirlinga temples. It is one of the 275 Paadal Petra Sthalams, the sacred sites glorified by the Nayanars (Shaivite poet-saints), Appar, Sundarar, and Sambandar, with their songs. According to tradition, the lingam (an aniconic form of Shiva) of the Ramanathaswamy Temple was established and worshipped by Lord Ram before he crossed the bridge called Rama Setu to the island kingdom of Lanka, identified with Sri Lanka. It is one of the Char Dham pilgrimage sites. The temple was expanded during the 12th century by the Pandya Dynasty, and its principal shrine’s sanctum was renovated by Jeyaveera Cinkaiariyan and his successor Gunaveera Cinkaiariyan, monarchs of the Jaffna kingdom. The temple has the longest corridor among all the Hindu temples of India. It was built by King Muthuramalinga Sethupathy.[1][2] The temple is considered a pilgrimage site for Shaivites, Vaishnavites, and Smartas.
+
+                </span>
+            </div>
+        </div>
+        <div class="Vcard">
+            <div class="Vleft">
+                <img src="https://images.unsplash.com/photo-1724303740927-bbb568013fd1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Ym9kaCUyMGdheWF8ZW58MHx8MHx8fDA%3D" alt="Placeholder image">
+            </div>
+            <div class="Vright">
+                <h1 id="heading">Bodh Gaya
+                </h1>
+                <span>Bodh Gayā is a religious site and place of pilgrimage associated with the Mahabodhi Temple complex, situated in the Gaya district in the Indian state of Bihar. It is famous for being the place where Gautama Buddha is said to have attained enlightenment (Pali: bodhi) under what became known as the Bodhi Tree.[2] Since antiquity, Bodh Gayā has remained the object of pilgrimage and veneration, for both Hindus and Buddhists.[3] In particular, archaeological finds, including sculptures, show that the site was in use by Buddhists since the Mauryan period.[4] Bodh Gayā and the nearby regions were invaded and destroyed in the 12th century CE by Muslim Turk armies, led by Delhi Sultanate's Qutb al-Din Aibak and Bakhtiyar Khilji.
+
+                    For Buddhists, Bodh Gayā is the most important of the four main pilgrimage sites related to the life of Gautama Buddha,[5] the other three being Kushinagar, Lumbini.</span>
+            </div>
+        </div>
+        
+     
+
+    </div>
+</body>
+</html>
